@@ -4,6 +4,7 @@ on:
     schedule:
         # Run daily at UTC 04:00 (1 hour after the auto cleanup task)
         - cron: "*/5 * * * *"
+        branches: [main]
     workflow_dispatch:
         inputs:
             environment:
